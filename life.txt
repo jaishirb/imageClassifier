@@ -1,0 +1,64 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+from PIL import Image
+from time import time
+
+initialTime = time()
+photo = Image.open('image3.png') #the image to analyze
+photo = photo.convert('RGB')
+width = photo.size[0]*20//100 #define W and H
+height = photo.size[1]*20//100
+photo = photo.resize((width,height),Image.NEAREST)
+
+data, optimized_data, list_of_times = [], [], []
+count,count2 = 0,0
+time_elapsed = 0
+
+print ("phase 1...")
+for y in range(0, height): #each pixel has coordinates
+    for x in range(0, width):
+        RGB = photo.getpixel((x,y)) #get the pixel x,y
+        R,G,B = RGB  #now you can use the RGB value
+        data.append(str(R) + str(G) + str(B))  # add a color to the matrix
+
+sorted_data = list(sorted(data))
+len_sm = len(sorted_data)
+actual_len_sd = len_sm
+
+print("phase 2... wait until appears the progress in the screen")
+
+while len(sorted_data)>0:
+    start_cycle = time()
+    temp_data = sorted_data[0]
+    limit_position = 0
+
+    while limit_position < len(sorted_data) and temp_data == sorted_data[int(limit_position)]:
+        limit_position += 1
+
+    for i in sorted_data[:limit_position]:
+        sorted_data.remove(i)
+
+    quantity = limit_position
+    list_of_times.append(quantity*100/len_sm)
+
+    actual_len_sd -= quantity
+    optimized_data.append(temp_data)
+
+    percent = (len_sm - actual_len_sd) * 100 / len_sm
+    finish_cycle = time()
+    time_elapsed += finish_cycle-start_cycle
+
+    sys.stdout.write('\r' + " ")
+    sys.stdout.write('\r' + str(len(sorted_data)) + " -> "
+                     + str("%.2f"%percent) + "% completed," + " time elapsed: "
+                     + str("%.1f"%time_elapsed) + " seconds")
+    count += 1
+
+print()
+for i in range(0,len(optimized_data)):
+    print(optimized_data[i],"\t","-> ",list_of_times[i],"%")
+print(len(optimized_data)," colors were found")
+finalTime = time()
+executionTime = finalTime - initialTime #time of execution
+print ('The time of execution was: ',executionTime, " seconds") #in seconds
