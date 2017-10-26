@@ -18,6 +18,8 @@ from cellCounter import cellCounter
 
 @jit
 def imadjust(src, tol=1, vin=[0, 255], vout=(0, 255)):
+    """Adjust the image. Reduce noise."""
+    
     assert len(src.shape) == 3 ,'Input image should be 2-dims'
     tol = max(0, min(100, tol))
 
