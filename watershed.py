@@ -133,7 +133,7 @@ def main():
 
     image = np.asarray(image)
     mask, image, quantity = apply_watershed(image, crop=True)
-    cell_counter = cell_counter(image)
+    cell_counter = CellCounter(image)
     res = cell_counter.count()
     print("Total of cells of sample: {}.".format(quantity))
     print("Total of cells of population approximately: {}.".format(res))
