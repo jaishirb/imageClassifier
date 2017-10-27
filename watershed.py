@@ -12,7 +12,7 @@ from scipy import ndimage
 from skimage.feature import peak_local_max
 from skimage.morphology import watershed
 
-from cellCounter import cellCounter
+from cellcounter import CellCounter
 
 
 @jit
@@ -133,7 +133,7 @@ def main():
 
     image = np.asarray(image)
     mask, image, quantity = apply_watershed(image, crop=True)
-    cell_counter = cellCounter(image)
+    cell_counter = cell_counter(image)
     res = cell_counter.count()
     print("Total of cells of sample: {}.".format(quantity))
     print("Total of cells of population approximately: {}.".format(res))
