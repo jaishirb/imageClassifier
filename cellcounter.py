@@ -9,10 +9,9 @@ class CellCounter:
         dna = self.__image
         dna = dna.max(axis=2)
 
-        dnaf = mh.gaussian_filter(dna, 2.)
-        T_mean = dnaf.mean()
+        d_naf = mh.gaussian_filter(dna, 2.)
+        t_mean = d_naf.mean()
 
-        bin_image = dnaf > T_mean
+        bin_image = d_naf > t_mean
         labeled, nr_objects = mh.label(bin_image)
-
         return nr_objects
