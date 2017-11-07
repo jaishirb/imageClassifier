@@ -11,8 +11,9 @@ from numba import jit
 from scipy import ndimage
 from skimage.feature import peak_local_max
 from skimage.morphology import watershed
-
+from stadistics import Estimator
 from cellcounter import CellCounter
+from classifier import Classifier, NeuralNetwork
 
 
 @jit
@@ -43,6 +44,17 @@ def im_adjust(src, tol=1, vin=None, v_out=(0, 255)):
     return dst
 
 
+def adjust_gamma(image, gamma=1.0):
+    # build a lookup table mapping the pixel values [0, 255] to
+    # their adjusted gamma values
+    invGamma = 1.0 / gamma
+    table = np.array([((i / 255.0) ** invGamma) * 255
+                      for i in np.arange(0, 256)]).astype("uint8")
+
+    # apply gamma correction using the lookup table
+    return cv2.LUT(image, table)
+
+
 def brute_force(img):
     img = img[:, :, 0]
     img[img >= 185] = 0
@@ -51,6 +63,8 @@ def brute_force(img):
 
 def operate_image(option):
     gray = cv2.cvtColor(option, cv2.COLOR_BGR2GRAY)
+    #gray = cv2.equalizeHist(gray)
+
     thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
     kernel = np.ones((2, 2), np.uint8)
     thresh = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel, iterations=2)
@@ -80,6 +94,7 @@ def apply_watershed(image, crop=False):
         im2, contours, hierarchy, mask = operate_image(shifted)
         quantity = 0
     else:
+        global input_data
         im2, contours, hierarchy, mask = operate_image(image)
         quantity, index = 0, 0
         width, height = mask.shape
@@ -89,11 +104,18 @@ def apply_watershed(image, crop=False):
         for cnt in contours:
             x, y, w, h = cv2.boundingRect(cnt)
             p = w * h * 100 / total_area
-            if 0.2 <= p <= 1:
+            if 0.1 <= p <= 1:
                 index, quantity = index + 1, quantity + 1
                 roi = img[y: y + h, x: x + w]
+                classifier = Classifier(roi)
+                r = classifier.classify()
+                if r is not None:
+                    input_data.append(r)
                 cv2.imwrite("images/test/" + str(index) + '.png', roi)
     return mask, image, quantity
+
+
+input_data = []
 
 
 def main():
@@ -106,8 +128,8 @@ def main():
             raise
 
     image = cv2.imread(args["image"])
+    image = adjust_gamma(image)
     mask, image, quantity = apply_watershed(image)
-
     _, alpha = cv2.threshold(mask, 0, 255, cv2.THRESH_BINARY_INV)
     b, g, r = cv2.split(image)
     rgba = [b, g, r, alpha]
@@ -135,9 +157,27 @@ def main():
     mask, image, quantity = apply_watershed(image, crop=True)
     cell_counter = CellCounter(image)
     res = cell_counter.count()
+
+    global input_data
+    outs = np.array([[0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]).T
+
+    # input_data = np.array(input_data)
+    # neural_network = NeuralNetwork()
+    # neural_network.train(input_data, outs, 10000)
+
+    """
+    for i in range(input_data.shape[0]):
+        print(neural_network.think(input_data[i])[0])
+    """
+    e = Estimator(0.05, quantity, res)
+    print("Estimation for cytokinesis: {}".format(e.hyp_test(5)))
     print("Total of cells of sample: {}.".format(quantity))
     print("Total of cells of population approximately: {}.".format(res))
-    print("Proportion: {}%".format(round(quantity*100/res, 2)))
+    print(e.conf_int(3))
+    print(e.hyp_test(3))
 
 
 if __name__ == '__main__':
