@@ -6,7 +6,7 @@ from math import hypot
 class Classifier:
     def __init__(self, image):
         self.__im = image
-        self.__height, self.__width, _ = self.__im.shape
+        self.__height, self.__width = self.__im.shape
         self.__x, self.__y = 0, 0
 
     def __calc_center(self):
