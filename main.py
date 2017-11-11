@@ -62,6 +62,8 @@ def operate_image(option):
     kernel = np.ones((2, 2), np.uint8)
     thresh = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel, iterations=2)
 
+    area = Image.fromarray(thresh).convert("RGB").getcolors()[1][0]
+
     d = ndimage.distance_transform_edt(thresh)
     local_max = peak_local_max(d, indices=False, min_distance=20, labels=thresh)
     markers = ndimage.label(local_max, structure=np.ones((3, 3)))[0]
@@ -75,35 +77,39 @@ def operate_image(option):
 
     c1, c2 = cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE
     im2, contours, hierarchy = cv2.findContours(mask.copy(), c1, c2)
-    return im2, contours, hierarchy, mask
+    return im2, contours, hierarchy, mask, area
 
 
 def apply_watershed(image, crop=False):
-    data = []
+    data, t = [], 0
     if not crop:
         image = im_adjust(image)
         cv2.imwrite("images/pic.jpg", image)
         image = cv2.imread("images/pic.jpg")
         shifted = cv2.fastNlMeansDenoisingColored(image, None, 10, 10, 7, 21)
-        im2, contours, hierarchy, mask = operate_image(shifted)
+        im2, contours, hierarchy, mask, area = operate_image(shifted)
         quantity = 0
     else:
-        im2, contours, hierarchy, mask = operate_image(image)
+        im2, contours, hierarchy, mask, area = operate_image(image)
         quantity, index = 0, 0
         width, height = mask.shape
         total_area = width * height
         img = cv2.imread("enh.png")
 
+        local_area = 0
         for cnt in contours:
             x, y, w, h = cv2.boundingRect(cnt)
             p = w * h * 100 / total_area
             if 0.1 <= p <= 1:
                 index, quantity = index + 1, quantity + 1
                 roi = mask[y: y + h, x: x + w]
+                local_area += Image.fromarray(roi).convert("RGB").getcolors()[1][0]
                 ro = img[y: y + h, x: x + w]
                 data.append(roi)
                 cv2.imwrite("images/test/" + str(index) + '.png', ro)
-    return mask, image, quantity, data
+        local_area /= len(data)
+        t = round(area/local_area)
+    return mask, image, quantity, data, t
 
 
 def main():
@@ -121,7 +127,7 @@ def main():
     image = cv2.imread("enh.png")
     image = adjust_gamma(image)
 
-    mask, image, quantity, _ = apply_watershed(image)
+    mask, image, quantity, _, _ = apply_watershed(image)
     _, alpha = cv2.threshold(mask, 0, 255, cv2.THRESH_BINARY_INV)
     b, g, r = cv2.split(image)
     rgba = [b, g, r, alpha]
@@ -133,7 +139,7 @@ def main():
 
     cv2.imwrite("images/test_transparent.png", dst)
     image = cv2.imread("images/test_transparent.png")
-    mask, image, quantity, _ = apply_watershed(image)
+    mask, image, quantity, _, _ = apply_watershed(image)
 
     if os.path.exists("images/test_transparent.png"):
         os.remove(os.getcwd() + "/images/test_transparent.png")
@@ -149,9 +155,10 @@ def main():
     image = cv2.cvtColor(dst, cv2.COLOR_RGBA2RGB)
 
     image = np.asarray(image)
-    mask, image, quantity, data = apply_watershed(image, crop=True)
+    mask, image, quantity, data, t = apply_watershed(image, crop=True)
     cell_counter = CellCounter(image)
     res = cell_counter.count(data, quantity)
+    res = int((res + quantity + t)*1.025/3)
 
     print("Total of cells of sample: {}.".format(quantity))
     print("Total of cells of population approximately: {}.".format(res))

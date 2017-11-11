@@ -2,68 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dfe3c18-221f-487a-bb2f-f3dbb99dfe7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/1.png" afterPath="$PROJECT_DIR$/images/test/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/10.png" afterPath="$PROJECT_DIR$/images/test/10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/11.png" afterPath="$PROJECT_DIR$/images/test/11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/12.png" afterPath="$PROJECT_DIR$/images/test/12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/13.png" afterPath="$PROJECT_DIR$/images/test/13.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/14.png" afterPath="$PROJECT_DIR$/images/test/14.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/15.png" afterPath="$PROJECT_DIR$/images/test/15.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/16.png" afterPath="$PROJECT_DIR$/images/test/16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/17.png" afterPath="$PROJECT_DIR$/images/test/17.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/18.png" afterPath="$PROJECT_DIR$/images/test/18.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/19.png" afterPath="$PROJECT_DIR$/images/test/19.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/2.png" afterPath="$PROJECT_DIR$/images/test/2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/20.png" afterPath="$PROJECT_DIR$/images/test/20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/21.png" afterPath="$PROJECT_DIR$/images/test/21.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/22.png" afterPath="$PROJECT_DIR$/images/test/22.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/23.png" afterPath="$PROJECT_DIR$/images/test/23.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/24.png" afterPath="$PROJECT_DIR$/images/test/24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/25.png" afterPath="$PROJECT_DIR$/images/test/25.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/26.png" afterPath="$PROJECT_DIR$/images/test/26.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/27.png" afterPath="$PROJECT_DIR$/images/test/27.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/28.png" afterPath="$PROJECT_DIR$/images/test/28.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/29.png" afterPath="$PROJECT_DIR$/images/test/29.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/3.png" afterPath="$PROJECT_DIR$/images/test/3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/30.png" afterPath="$PROJECT_DIR$/images/test/30.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/31.png" afterPath="$PROJECT_DIR$/images/test/31.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/32.png" afterPath="$PROJECT_DIR$/images/test/32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/33.png" afterPath="$PROJECT_DIR$/images/test/33.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/34.png" afterPath="$PROJECT_DIR$/images/test/34.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/35.png" afterPath="$PROJECT_DIR$/images/test/35.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/36.png" afterPath="$PROJECT_DIR$/images/test/36.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/37.png" afterPath="$PROJECT_DIR$/images/test/37.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/38.png" afterPath="$PROJECT_DIR$/images/test/38.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/39.png" afterPath="$PROJECT_DIR$/images/test/39.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/4.png" afterPath="$PROJECT_DIR$/images/test/4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/40.png" afterPath="$PROJECT_DIR$/images/test/40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/41.png" afterPath="$PROJECT_DIR$/images/test/41.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/42.png" afterPath="$PROJECT_DIR$/images/test/42.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/43.png" afterPath="$PROJECT_DIR$/images/test/43.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/44.png" afterPath="$PROJECT_DIR$/images/test/44.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/45.png" afterPath="$PROJECT_DIR$/images/test/45.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/46.png" afterPath="$PROJECT_DIR$/images/test/46.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/47.png" afterPath="$PROJECT_DIR$/images/test/47.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/48.png" afterPath="$PROJECT_DIR$/images/test/48.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/49.png" afterPath="$PROJECT_DIR$/images/test/49.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/5.png" afterPath="$PROJECT_DIR$/images/test/5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/50.png" afterPath="$PROJECT_DIR$/images/test/50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/51.png" afterPath="$PROJECT_DIR$/images/test/51.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/52.png" afterPath="$PROJECT_DIR$/images/test/52.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/53.png" afterPath="$PROJECT_DIR$/images/test/53.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/54.png" afterPath="$PROJECT_DIR$/images/test/54.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/55.png" afterPath="$PROJECT_DIR$/images/test/55.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/56.png" afterPath="$PROJECT_DIR$/images/test/56.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/57.png" afterPath="$PROJECT_DIR$/images/test/57.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/58.png" afterPath="$PROJECT_DIR$/images/test/58.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/59.png" afterPath="$PROJECT_DIR$/images/test/59.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/6.png" afterPath="$PROJECT_DIR$/images/test/6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/7.png" afterPath="$PROJECT_DIR$/images/test/7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/8.png" afterPath="$PROJECT_DIR$/images/test/8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/9.png" afterPath="$PROJECT_DIR$/images/test/9.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cellcounter.py" afterPath="$PROJECT_DIR$/cellcounter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classifier.py" afterPath="$PROJECT_DIR$/classifier.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,9 +20,11 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="186">
+              <caret line="174" column="0" lean-forward="true" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +32,7 @@
       <file leaf-file-name="classifier.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="90">
               <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -103,7 +44,7 @@
       <file leaf-file-name="stadistics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stadistics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
+            <state relative-caret-position="666">
               <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -115,7 +56,7 @@
       <file leaf-file-name="cellcounter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cellcounter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="511">
               <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -147,8 +88,8 @@
         <option value="$PROJECT_DIR$/Classifier.py" />
         <option value="$PROJECT_DIR$/stadistics.py" />
         <option value="$PROJECT_DIR$/classifier.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/cellcounter.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -180,7 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,6 +132,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -272,14 +213,21 @@
       <option name="project" value="LOCAL" />
       <updated>1510110791083</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Brute force removed, gamma adjust added, image enhacement added.">
+      <created>1510290233894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1510290233894</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="58" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31638846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32169953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -287,7 +235,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40802675" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.409699" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -310,7 +258,8 @@
     <MESSAGE value="Variable names" />
     <MESSAGE value="New stuff." />
     <MESSAGE value="Code removed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Code removed." />
+    <MESSAGE value="Brute force removed, gamma adjust added, image enhacement added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Brute force removed, gamma adjust added, image enhacement added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -321,7 +270,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stadistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellcounter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -359,7 +350,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="57" column="22" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="57" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -397,7 +390,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -435,7 +430,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -473,7 +470,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,7 +510,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -549,7 +550,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -587,7 +590,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
           <caret line="84" column="34" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -625,7 +630,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
           <caret line="84" column="34" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -663,7 +670,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,7 +690,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -699,7 +710,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -707,24 +720,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sum.py" />
-    <entry file="file://$PROJECT_DIR$/cellcounter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sum.py" />
     <entry file="file://$PROJECT_DIR$/stadistics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
+        <state relative-caret-position="666">
           <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -734,7 +739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="90">
           <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -742,11 +747,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cellcounter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="186">
+          <caret line="174" column="0" lean-forward="true" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
