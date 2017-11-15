@@ -11,8 +11,8 @@ from numba import jit
 from scipy import ndimage
 from skimage.feature import peak_local_max
 from skimage.morphology import watershed
-from cellcounter import CellCounter
 from PIL import ImageEnhance, Image
+
 
 @jit
 def im_adjust(src, tol=1, vin=None, v_out=(0, 255)):
@@ -50,25 +50,18 @@ def adjust_gamma(image, gamma=1.0):
     return cv2.LUT(image, table)
 
 
-def brute_force(img):
-    img = img[:, :, 0]
-    img[img >= 185] = 0
-    img[img > 0] = 255
-
-
 def operate_image(option):
     gray = cv2.cvtColor(option, cv2.COLOR_BGR2GRAY)
     thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
     kernel = np.ones((2, 2), np.uint8)
     thresh = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel, iterations=2)
-
     area = Image.fromarray(thresh).convert("RGB").getcolors()[1][0]
 
     d = ndimage.distance_transform_edt(thresh)
     local_max = peak_local_max(d, indices=False, min_distance=20, labels=thresh)
     markers = ndimage.label(local_max, structure=np.ones((3, 3)))[0]
     labels = watershed(-d, markers, mask=thresh)
-    mask = np.zeros(gray.shape, dtype="uint8")
+    mask = np.zeros(gray.shape, dtype=np.uint8)
 
     for label in np.unique(labels):
         if label == 0:
@@ -76,40 +69,36 @@ def operate_image(option):
         mask[labels == label] = 255
 
     c1, c2 = cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE
-    im2, contours, hierarchy = cv2.findContours(mask.copy(), c1, c2)
-    return im2, contours, hierarchy, mask, area
+    _, contours, _ = cv2.findContours(mask.copy(), c1, c2)
+    return contours, mask, area
 
 
-def apply_watershed(image, crop=False):
-    data, t = [], 0
-    if not crop:
-        image = im_adjust(image)
-        cv2.imwrite("images/pic.jpg", image)
-        image = cv2.imread("images/pic.jpg")
-        shifted = cv2.fastNlMeansDenoisingColored(image, None, 10, 10, 7, 21)
-        im2, contours, hierarchy, mask, area = operate_image(shifted)
-        quantity = 0
-    else:
-        im2, contours, hierarchy, mask, area = operate_image(image)
-        quantity, index = 0, 0
+def apply_watershed(image, crop=False, quantity=0, index=0):
+    if crop:
+        contours, mask, area = operate_image(image)
         width, height = mask.shape
         total_area = width * height
-        img = cv2.imread("enh.png")
+        img = cv2.imread("enhanced.png")
 
-        local_area = 0
         for cnt in contours:
             x, y, w, h = cv2.boundingRect(cnt)
             p = w * h * 100 / total_area
             if 0.1 <= p <= 1:
                 index, quantity = index + 1, quantity + 1
-                roi = mask[y: y + h, x: x + w]
-                local_area += Image.fromarray(roi).convert("RGB").getcolors()[1][0]
                 ro = img[y: y + h, x: x + w]
-                data.append(roi)
                 cv2.imwrite("images/test/" + str(index) + '.png', ro)
-        local_area /= len(data)
-        t = round(area/local_area)
-    return mask, image, quantity, data, t
+        return mask, image, quantity, area
+
+    image = im_adjust(image)
+    image = image.astype(np.uint8)
+    shifted = cv2.fastNlMeansDenoisingColored(image, None, 10, 10, 7, 21)
+    _, mask, area = operate_image(shifted)
+    return mask, image, quantity, area
+
+
+def count(x):
+    y = 2.692717401 + 0.001807464 * x
+    return int(round(y - 2.616176454, 0)), int(round(y + 2.616176454, 0))
 
 
 def main():
@@ -123,42 +112,17 @@ def main():
 
     im = Image.open(args["image"])
     contrast = ImageEnhance.Contrast(im)
-    contrast.enhance(3).save("enh.png")
-    image = cv2.imread("enh.png")
+    contrast.enhance(2)
+    image = np.asarray(im, dtype=np.uint8)
     image = adjust_gamma(image)
 
-    mask, image, quantity, _, _ = apply_watershed(image)
-    _, alpha = cv2.threshold(mask, 0, 255, cv2.THRESH_BINARY_INV)
-    b, g, r = cv2.split(image)
-    rgba = [b, g, r, alpha]
-    dst = cv2.merge(rgba, 4)
-
-    contrast = ImageEnhance.Contrast(Image.fromarray(dst))
+    mask, image, quantity, _ = apply_watershed(image)
+    image = Image.fromarray(image)
+    contrast = ImageEnhance.Contrast(image)
     contrast.enhance(3).save("enhanced.png")
-    dst = cv2.imread("enhanced.png")
-
-    cv2.imwrite("images/test_transparent.png", dst)
-    image = cv2.imread("images/test_transparent.png")
-    mask, image, quantity, _, _ = apply_watershed(image)
-
-    if os.path.exists("images/test_transparent.png"):
-        os.remove(os.getcwd() + "/images/test_transparent.png")
-
-    if os.path.exists("images/pic.jpg"):
-        os.remove(os.getcwd() + "/images/pic.jpg")
-
-    _, alpha = cv2.threshold(mask, 0, 255, cv2.THRESH_BINARY_INV)
-    b, g, r = cv2.split(image)
-    rgba = [b, g, r, alpha]
-    dst = cv2.merge(rgba, 4)
-
-    image = cv2.cvtColor(dst, cv2.COLOR_RGBA2RGB)
-
-    image = np.asarray(image)
-    mask, image, quantity, data, t = apply_watershed(image, crop=True)
-    cell_counter = CellCounter(image)
-    res = cell_counter.count(data, quantity)
-    res = int((res + quantity + t)*1.025/3)
+    image = cv2.imread("enhanced.png")
+    mask, image, quantity, area = apply_watershed(image, crop=True)
+    res = count(area)
 
     print("Total of cells of sample: {}.".format(quantity))
     print("Total of cells of population approximately: {}.".format(res))
