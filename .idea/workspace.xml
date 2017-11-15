@@ -1,69 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dfe3c18-221f-487a-bb2f-f3dbb99dfe7d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cellcounter.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/1.png" afterPath="$PROJECT_DIR$/images/test/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/10.png" afterPath="$PROJECT_DIR$/images/test/10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/11.png" afterPath="$PROJECT_DIR$/images/test/11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/12.png" afterPath="$PROJECT_DIR$/images/test/12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/13.png" afterPath="$PROJECT_DIR$/images/test/13.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/14.png" afterPath="$PROJECT_DIR$/images/test/14.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/15.png" afterPath="$PROJECT_DIR$/images/test/15.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/16.png" afterPath="$PROJECT_DIR$/images/test/16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/17.png" afterPath="$PROJECT_DIR$/images/test/17.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/18.png" afterPath="$PROJECT_DIR$/images/test/18.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/19.png" afterPath="$PROJECT_DIR$/images/test/19.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/2.png" afterPath="$PROJECT_DIR$/images/test/2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/20.png" afterPath="$PROJECT_DIR$/images/test/20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/21.png" afterPath="$PROJECT_DIR$/images/test/21.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/22.png" afterPath="$PROJECT_DIR$/images/test/22.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/23.png" afterPath="$PROJECT_DIR$/images/test/23.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/24.png" afterPath="$PROJECT_DIR$/images/test/24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/25.png" afterPath="$PROJECT_DIR$/images/test/25.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/26.png" afterPath="$PROJECT_DIR$/images/test/26.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/27.png" afterPath="$PROJECT_DIR$/images/test/27.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/28.png" afterPath="$PROJECT_DIR$/images/test/28.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/29.png" afterPath="$PROJECT_DIR$/images/test/29.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/3.png" afterPath="$PROJECT_DIR$/images/test/3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/30.png" afterPath="$PROJECT_DIR$/images/test/30.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/31.png" afterPath="$PROJECT_DIR$/images/test/31.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/32.png" afterPath="$PROJECT_DIR$/images/test/32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/33.png" afterPath="$PROJECT_DIR$/images/test/33.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/34.png" afterPath="$PROJECT_DIR$/images/test/34.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/35.png" afterPath="$PROJECT_DIR$/images/test/35.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/36.png" afterPath="$PROJECT_DIR$/images/test/36.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/37.png" afterPath="$PROJECT_DIR$/images/test/37.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/38.png" afterPath="$PROJECT_DIR$/images/test/38.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/39.png" afterPath="$PROJECT_DIR$/images/test/39.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/4.png" afterPath="$PROJECT_DIR$/images/test/4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/40.png" afterPath="$PROJECT_DIR$/images/test/40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/41.png" afterPath="$PROJECT_DIR$/images/test/41.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/42.png" afterPath="$PROJECT_DIR$/images/test/42.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/43.png" afterPath="$PROJECT_DIR$/images/test/43.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/44.png" afterPath="$PROJECT_DIR$/images/test/44.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/45.png" afterPath="$PROJECT_DIR$/images/test/45.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/46.png" afterPath="$PROJECT_DIR$/images/test/46.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/47.png" afterPath="$PROJECT_DIR$/images/test/47.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/48.png" afterPath="$PROJECT_DIR$/images/test/48.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/49.png" afterPath="$PROJECT_DIR$/images/test/49.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/5.png" afterPath="$PROJECT_DIR$/images/test/5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/50.png" afterPath="$PROJECT_DIR$/images/test/50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/51.png" afterPath="$PROJECT_DIR$/images/test/51.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/52.png" afterPath="$PROJECT_DIR$/images/test/52.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/53.png" afterPath="$PROJECT_DIR$/images/test/53.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/54.png" afterPath="$PROJECT_DIR$/images/test/54.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/55.png" afterPath="$PROJECT_DIR$/images/test/55.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/56.png" afterPath="$PROJECT_DIR$/images/test/56.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/57.png" afterPath="$PROJECT_DIR$/images/test/57.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/58.png" afterPath="$PROJECT_DIR$/images/test/58.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/59.png" afterPath="$PROJECT_DIR$/images/test/59.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/6.png" afterPath="$PROJECT_DIR$/images/test/6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/7.png" afterPath="$PROJECT_DIR$/images/test/7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/8.png" afterPath="$PROJECT_DIR$/images/test/8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/test/9.png" afterPath="$PROJECT_DIR$/images/test/9.png" />
+    <list default="true" id="6dfe3c18-221f-487a-bb2f-f3dbb99dfe7d" name="Default" comment="Time execution reduced, sample size increased, counting method improved. Folder removed.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/enhanced.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/61.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/62.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/64.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/65.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/66.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/67.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/68.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/69.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/70.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/71.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/73.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/74.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/75.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/77.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/78.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/79.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/81.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/82.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/83.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/84.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/85.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/86.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/87.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/88.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/89.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/90.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/91.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,8 +52,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="309">
+              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -256,13 +228,20 @@
       <option name="project" value="LOCAL" />
       <updated>1510367283953</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Time execution reduced, sample size increased, counting method improved.">
+      <created>1510787936312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1510787936312</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3801214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3801214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -270,7 +249,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33110368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33110368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -295,7 +274,8 @@
     <MESSAGE value="Code removed." />
     <MESSAGE value="Brute force removed, gamma adjust added, image enhacement added." />
     <MESSAGE value="new Area equation." />
-    <option name="LAST_COMMIT_MESSAGE" value="new Area equation." />
+    <MESSAGE value="Time execution reduced, sample size increased, counting method improved." />
+    <option name="LAST_COMMIT_MESSAGE" value="Time execution reduced, sample size increased, counting method improved." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -741,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="309">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding />
         </state>
       </provider>
