@@ -1,4 +1,4 @@
-from math import factorial, sqrt, ceil
+from math import factorial, sqrt, ceil, sin, asin
 from scipy import stats
 
 
@@ -8,47 +8,20 @@ class Estimator:
         self.__n = n
         self.__N = N
 
-    def __ncr(self, r):
-        n = self.__n
-        f = factorial
-        return f(n) // (f(r) * f(n - r))
-
-    def __p_val_bin(self, x, p=0):
-        alpha, n, N = self.__alpha, self.__n, self.__N
-        pt = x / N
-        fmp = 1 - stats.binom.cdf(x, n, pt)
-        return fmp < alpha
-
-    def __p_val_norm(self, x):
+    def normal_est(self, x):
         normal = stats.norm()
-        pg, p0 = x / self.__n, x / self.__N
-        p = normal.ppf(1 - self.__alpha)
-        z = (pg - p0) / sqrt(p0 * (1 - p0) / self.__n)
-        return z > p
+        z = normal.ppf(1-self.__alpha/2)
+        p = x/self.__n
+        a = 1/(1 + 1/(self.__n*z**2))
+        b = p + (1/(2*self.__n))*z**2
+        li = a*(b - sqrt((1/self.__n)*p*(1-p) + (1/(4*self.__n**2))*z**2))
+        ls = a*(b + sqrt((1/self.__n)*p*(1-p) + (1/(4*self.__n**2))*z**2))
+        return int(li*self.__N), int(ls*self.__N)
 
-    def hyp_test(self, x):
-        if x < 5:
-            if self.__p_val_bin(x):
-                return "P > {}".format(x)
-            else:
-                return "P = {}".format(x)
-        else:
-            if self.__p_val_norm(x):
-                return "P > {}".format(x)
-            else:
-                return "P = {}".format(x)
-
-    def conf_int(self, x):
-        n = self.__n
-        z = stats.norm.ppf(1 - self.__alpha/2)
-        p = x / n
-        li = p - z * (sqrt(p * (1 - p) / n)) + 1 / (2 * n)
-        ls = p + z * (sqrt(p * (1 - p) / n)) + 1 / (2 * n)
-        return ceil(self.__N * li), ceil(self.__N * ls)
-
-    @staticmethod
-    def fisher(alpha, v1, v2):
-        if alpha <= 0:
-            return 0
-
-        return round(stats.f.ppf(1 - alpha, v1, v2), 2)
+    def arcsin_est(self, x):
+        normal = stats.norm()
+        z = normal.ppf(1 - self.__alpha / 2)
+        p = x/self.__n
+        li = sin(asin(sqrt(p)) - z/(2*sqrt(self.__n)))**2
+        ls = sin(asin(sqrt(p)) + z/(2*sqrt(self.__n)))**2
+        return int(li*self.__N, 0), int(ls*self.__N, 0)

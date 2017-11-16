@@ -12,7 +12,7 @@ from scipy import ndimage
 from skimage.feature import peak_local_max
 from skimage.morphology import watershed
 from PIL import ImageEnhance, Image
-
+from stadistics import Estimator
 
 @jit
 def im_adjust(src, tol=1, vin=None, v_out=(0, 255)):
@@ -123,9 +123,13 @@ def main():
     image = cv2.imread("enhanced.png")
     mask, image, quantity, area = apply_watershed(image, crop=True)
     res = count(area)
-
+    est = Estimator(0.1, quantity, res[0])
     print("Total of cells of sample: {}.".format(quantity))
     print("Total of cells of population approximately: {}.".format(res))
+    print("\nEstimations with a confidence level of {}%.".format(0.9*100))
+    print("Estimation for 3 cells in cytokinesis: {}".format(est.normal_est(3)))
+    print("Estimation for 70 cells in metaphase: {}".format(est.normal_est(70)))
+    print("Estimation for 18 cells in prophase: {}".format(est.normal_est(18)))
 
 
 if __name__ == '__main__':

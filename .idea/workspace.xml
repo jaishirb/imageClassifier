@@ -1,41 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dfe3c18-221f-487a-bb2f-f3dbb99dfe7d" name="Default" comment="Time execution reduced, sample size increased, counting method improved. Folder removed.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/enhanced.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/61.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/62.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/63.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/64.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/65.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/66.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/67.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/68.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/69.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/70.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/71.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/73.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/74.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/75.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/76.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/77.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/78.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/79.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/80.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/81.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/82.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/83.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/84.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/85.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/86.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/87.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/88.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/89.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/90.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test/91.png" />
+    <list default="true" id="6dfe3c18-221f-487a-bb2f-f3dbb99dfe7d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stadistics.py" afterPath="$PROJECT_DIR$/stadistics.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,9 +21,21 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="237">
+              <caret line="128" column="13" lean-forward="false" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stadistics.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stadistics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,10 +61,10 @@
         <option value="$PROJECT_DIR$/watershed.py" />
         <option value="$PROJECT_DIR$/images/Classifier.py" />
         <option value="$PROJECT_DIR$/Classifier.py" />
-        <option value="$PROJECT_DIR$/stadistics.py" />
         <option value="$PROJECT_DIR$/classifier.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/cellcounter.py" />
+        <option value="$PROJECT_DIR$/stadistics.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -235,13 +216,20 @@
       <option name="project" value="LOCAL" />
       <updated>1510787936312</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Time execution reduced, sample size increased, counting method improved. Folder removed.">
+      <created>1510788032999</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1510788032999</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3801214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3801214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -249,7 +237,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33110368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3896321" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -275,7 +263,8 @@
     <MESSAGE value="Brute force removed, gamma adjust added, image enhacement added." />
     <MESSAGE value="new Area equation." />
     <MESSAGE value="Time execution reduced, sample size increased, counting method improved." />
-    <option name="LAST_COMMIT_MESSAGE" value="Time execution reduced, sample size increased, counting method improved." />
+    <MESSAGE value="Time execution reduced, sample size increased, counting method improved. Folder removed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Time execution reduced, sample size increased, counting method improved. Folder removed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -296,9 +285,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -332,9 +319,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -366,9 +351,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -412,9 +395,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -448,9 +429,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -484,9 +463,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -502,9 +479,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -546,9 +521,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -582,9 +555,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -618,9 +589,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -699,16 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stadistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -719,10 +678,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stadistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="237">
+          <caret line="128" column="13" lean-forward="false" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
           <folding />
         </state>
       </provider>
