@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511203843348</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Requirements changed7.">
+      <created>1511204249820</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1511204249820</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -312,7 +319,8 @@
     <MESSAGE value="Requirements changed4." />
     <MESSAGE value="Requirements changed5." />
     <MESSAGE value="Requirements changed6." />
-    <option name="LAST_COMMIT_MESSAGE" value="Requirements changed6." />
+    <MESSAGE value="Requirements changed7." />
+    <option name="LAST_COMMIT_MESSAGE" value="Requirements changed7." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
