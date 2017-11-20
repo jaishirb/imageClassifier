@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511197458006</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Requirements changed.">
+      <created>1511197715434</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1511197715434</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -264,7 +271,8 @@
     <MESSAGE value="Statistics estimation methods implemented." />
     <MESSAGE value="Blog Django implemented." />
     <MESSAGE value="Requirements and others added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Requirements and others added." />
+    <MESSAGE value="Requirements changed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Requirements changed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
