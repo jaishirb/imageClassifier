@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load urlify %}
+{% block head_title %}
+{{ instance.title }} | {{ block.super }}
+{% endblock head_title %}
+{% block post_detail_link %}
+<li><a href='{{ instance.get_absolute_url }}'>{{ instance.title }}</a>
+{% endblock %}
+{% block content %}
+<div class='col-sm-6 col-sm-offset-3'>
+	{% if instance.image %}
+	<br/>
+	<img src='{{ instance.image.url }}' class='img-responsive' />
+	{% endif %}
+<h1>{{ title }} <small>{% if instance.draft %}<span style='color:red;'>Draft</span>{% endif %} {{ instance.publish }}</small></h1>
+{% if instance.user.get_full_name %}
+<p>Autor: {{ instance.user.get_full_name }}</p>
+{% endif %}
+<p>
+<div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+<hr/>
+</p>
+<!-- <p>
+<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}">
+Facebook
+</a>
+<a href="https://twitter.com/home?status={{ instance.content|truncatechars:80|urlify }}%20{{ request.build_absolute_uri }}">
+Twitter
+</a>
+<a href='https://plus.google.com/share?url={{ request.build_absolute_uri }}'>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title={{ instance.title }}&summary={{ share_string }}&source={{ request.build_absolute_uri }}">
+Linkedin
+</a>
+</p> -->
+<div class='row'>
+<div class='col-sm-10 col-sm-offset-1'>
+{{ instance.content | linebreaks}}
+
+{% if instance.image %}
+
+
+{% load tag %}
+<br>
+<small>{{instance.image.url|driver}}</small>
+</br>
+
+<small>{{instance.image.url|aux3}}</small>
+
+<br>
+<small>{{instance.image.url|aux2}}</small>
+</br>
+
+<br>
+<small>{{instance.image.url|aux4}}</small>
+</br>
+
+<small>{{instance.image.url|aux5}}</small>
+
+<br>
+<small>{{instance.image.url|aux6}}</small>
+</br>
+
+<small>{{instance.image.url|aux7}}</small>
+
+<hr/>
+{% endif %}
+<a href="{{ instance.get_absolute_url }}edit" class="btn btn-primary" role="button">Editar</a> <a href="{{ instance.get_absolute_url }}delete" class="btn btn-danger" role="button">Eliminar</a>
+<hr/>
+<div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5"></div>
+</div>
+</div>
+</div>
+{% endblock content %}
