@@ -11,7 +11,6 @@ Pillow==4.3.0
 pygame==1.9.3
 Pygments==2.2.0
 pyparsing==2.2.0
-pysmbc==1.0.15.6
 scikit-image==0.13.1
 scikit-learn==0.19.1
 scipy==0.19.1
